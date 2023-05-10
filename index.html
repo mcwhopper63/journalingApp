@@ -7,8 +7,10 @@
     <title>Journal Safe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Martel+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,22 +21,26 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Journal Safe</h1>
-    <h2>
-      <ul>
-        <li>This is a safe place for you to journal</li>
-        <li>All journal entries are deleted upon closing this tab</li>
-        <li>
-          Make journaling a daily routine or come back anytime you are feeling
-          anxious or stressed :)
-        </li>
-      </ul>
-    </h2>
+    <container class="intro">
+      <h1>Journal Okay</h1>
+      <p>
+        This is a <strong>private</strong> place for you to journal. <br />All
+        journal entries are deleted upon closing this tab/window or by hitting
+        'Clear Journal'. <br /><strong>Nothing is stored.</strong> <br />Journal
+        every day to <strong>feel</strong> the full benefits of journaling.
+        <br />
+        Come back anytime you are feeling anxious or stressed. <br /><strong
+          >You are safe here 😌</strong
+        >
+      </p>
+    </container>
 
-    <div class="timer"></div>
+    <container class="journal row">
+      <div class="timer col"></div>
 
-    <input type="button" value="Clear Journal" id="clear" />
-    <textarea name="journal" id="output" cols="100" rows="35"></textarea>
+      <input type="button" value="Clear Journal" id="clear" />
+      <textarea name="journal" id="output" cols="100" rows="35"></textarea>
+    </container>
 
     <script src="./main.js" type="module"></script>
   </body>

@@ -1,37 +1,62 @@
-html {
-  background: cornflowerblue;
-  background-size: cover;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
+  background: cornflowerblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: url("/journal/images/pexels-jill-burrow-6858608.jpg");
-    background-size: cover; */
   margin: 24px;
+  font-family: 'Arvo', serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 16px;
 }
 
-h1,
-h2 {
-  background: #57a75900;
-  font-family: 'Libre Baskerville', serif, 'Martel Sans', sans-serif;
-  color: #57d8e9;
-}
-.timer {
-  font-family: sans-serif;
-  /* display: inline-block; */
+.intro {
+  max-width: 50%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  /* max-width: 30%; */
-  padding: 24px 32px;
-  border-radius: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #57d8e9;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+p {
+  width: 80%;
+  text-align: center;
+  line-height: 1.5;
+  margin: 3em 0;
+}
+
+.journal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 1em;
+  border-radius: 2em;
   background-color: #fff;
 }
 
 .timer__part {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -64,6 +89,11 @@ h2 {
   background: rgb(0, 100, 0);
 }
 
+.timer__btn--reset {
+  font-size: 2rem;
+}
+
 #clear {
   margin: 10px;
+  max-width: 20%;
 }

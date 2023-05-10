@@ -126,7 +126,7 @@ class Timer {
 
       </button>
 
-      <button type="button" class="timer__btn timer__btn--reset">Enter Time</button>
+      <button type="button" class="timer__btn timer__btn--reset">😔</button>
 
 		`
   }
