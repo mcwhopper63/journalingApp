@@ -21,27 +21,89 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <container class="intro">
-      <h1>Journal Okay</h1>
-      <p>
-        This is a <strong>private</strong> place for you to journal. <br />All
-        journal entries are deleted upon closing this tab/window or by hitting
-        'Clear Journal'. <br /><strong>Nothing is stored.</strong> <br />Journal
-        every day to <strong>feel</strong> the full benefits of journaling.
-        <br />
-        Come back anytime you are feeling anxious or stressed. <br /><strong
-          >You are safe here 😌</strong
+    <section class="intro">
+      <h1>Journal Safe</h1>
+      <div class="onboarding-notes">
+        <span class="onboarding-notes__bullet"
+          >Journaling has healed my chronic pain.</span
         >
+        <span class="onboarding-notes__bullet"
+          >Set the timer and journal away.</span
+        >
+        <span class="onboarding-notes__bullet">You are safe here 😌</span>
+        <span class="onboarding-notes__bullet"
+          >Forget fear while you are here 😌</span
+        >
+        <span class="onboarding-notes__bullet"
+          >Use this site on your desktop for the full experience.</span
+        >
+      </div>
+      <!-- 
+      <ul>
+        <li><strong>Journaling has healed my chronic pain</strong> .</li>
+        <li>Set the timer and journal away.</li>
+        <li>
+          Nothing is saved here. Everything is destroyed when you close this
+          tab.
+        </li>
+        <li>
+          <strong>You are safe here 😌</strong>
+        </li>
+        <li>
+          <strong>Forget fear while you journal 😌</strong>
+        </li>
+        <li>
+          Journal on your <strong>desktop</strong> for the full experience.
+        </li>
+      </ul> -->
+    </section>
+
+    <section class="journal">
+      <div class="timer"></div>
+      <button id="clear-btn">Clear Journal</button>
+      <textarea
+        id="textarea"
+        name="journal-area"
+        rows="30"
+        cols="90"
+      ></textarea>
+    </section>
+
+    <section class="footer">
+      <p class="footer__p">
+        My chronic pain got the worst of me in 2022. From May to September, I
+        could NOT use my left arm at all. An X-Ray and MRI confirmed a hernation
+        in the neck. I was diagnosed with cervical radiculopathy. My doctors
+        told me I needed epidurals for the rest of my life. I could not accept
+        this and needed to find a more natural way to heal.
       </p>
-    </container>
+      <p class="footer__p">
+        I found Dr Sarno's journaling techniques and have been journaling since
+        October 2022. I've recovered enough to the point where I am back to my
+        normal life. I strongly believe in the healing power that routine
+        journaling has. I want everyone with chronic pain to journal and heal.
+      </p>
+      <p class="footer__p">
+        Try it out, and let's heal together! This is free to use. No data is
+        collected. When you close this tab or window, your journal entry is
+        destroyed. Any feedback to improve this healing experience is greatly
+        appreciated.
+        <br />
+        <br />
+        <a
+          href="https://twitter.com/mcwhopper63?ref_src=twsrc%5Etfw"
+          class="twitter-follow-button"
+          data-show-count="false"
+          >@mcwhopper63</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </p>
+    </section>
 
-    <container class="journal row">
-      <div class="timer col"></div>
-
-      <input type="button" value="Clear Journal" id="clear" />
-      <textarea name="journal" id="output" cols="100" rows="35"></textarea>
-    </container>
-
-    <script src="./main.js" type="module"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
