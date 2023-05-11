@@ -96,6 +96,7 @@ class Timer {
 
   static getHTML() {
     return `
+    <div class="timer--top">
       <span class="timer__part timer__part--minutes">00</span>
       
       <span class="timer__part">:</span>
@@ -106,8 +107,10 @@ class Timer {
   
         <span class="material-icons">play_arrow</span>
       
-      </button>
+        </button>
+      </div>
 
+      <div class="timer--bottom">
       <button type="button" class="fiveMin timer__btn timer__btn--5min">
 
         5min
@@ -124,10 +127,11 @@ class Timer {
 
         20min
 
-      </button>
-
-      <button type="button" class="timer__btn timer__btn--help">😔</button>
-
+        </button> 
+      
+      
+        <button type="button" class="timer__btn timer__btn--reset">😔</button>
+      </div>
 		`
   }
 }
