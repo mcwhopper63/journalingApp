@@ -152,14 +152,14 @@ textarea {
   text-indent: 2em;
 }
 
-@media (min-width: 800px) {
-  .intro {
-    margin-top: -2em;
-  }
+@media (min-width: 1200px) {
   .journal {
-    margin-top: 0em;
+    /* margin-top: 0em; */
   }
   textarea {
-    width: 100%;
+    width: 55%;
+  }
+  .footer {
+    width: 55%;
   }
 }
