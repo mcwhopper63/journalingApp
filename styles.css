@@ -152,7 +152,7 @@ textarea {
   text-indent: 2em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .intro {
     margin-top: -2em;
   }
@@ -160,6 +160,10 @@ textarea {
     margin-top: 0em;
   }
   textarea {
-    width: 100%;
+    width: 60%;
+  }
+
+  .footer {
+    width: 50%;
   }
 }
