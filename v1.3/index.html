@@ -35,15 +35,23 @@
                 </p>
             </div>
 
-            <div class="timer border-and-shadow"></div>
+            <div id="timer-output" class="timer border-and-shadow"></div>
         </section>
 
         <section class="journal">
             <div class="buttons">
-                <button class="border-and-shadow clearBtn" id="clear-btn">
+                <button
+                    class="border-and-shadow clearBtn"
+                    onclick="javascript:eraseText();"
+                    id="clear-btn"
+                >
                     Destroy Entry
                 </button>
-                <button class="border-and-shadow hideBtn" id="hide-btn">
+                <button
+                    class="border-and-shadow hideBtn"
+                    id="hide-btn"
+                    onclick="javascript:hideTimer();"
+                >
                     Hide Time
                 </button>
             </div>
