@@ -26,7 +26,9 @@ class Timer {
         });
 
         this.el.reset.addEventListener('click', () => {
-            const inputMinutes = prompt('Enter number of minutes:');
+            const inputMinutes = prompt(
+                'Sorry you are stressed. How many minutes do you want to journal?'
+            );
 
             if (inputMinutes < 60) {
                 this.stop();
