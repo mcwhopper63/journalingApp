@@ -86,6 +86,7 @@ p {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    text-align: center;
 }
 
 #textarea {
@@ -179,7 +180,7 @@ p {
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 40px;
     }
 
     .p-and-timer-cntr {
@@ -192,26 +193,21 @@ p {
 
     p {
         font-size: 14px;
-        width: 100%;
-        /* margin-bottom: 10px; */
-    }
-
-    .timer {
-        width: 100%;
+        margin-bottom: -25px;
     }
 
     .timer__btn {
-        width: 40px;
-        height: 40px;
-        font-size: 10px;
         text-align: center;
     }
 
     .timer__part-cntr {
         margin-left: 35px;
     }
+    .timer__part-cntr {
+        margin-left: 70px;
+    }
     .timer__part {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .journal {
@@ -221,10 +217,11 @@ p {
 
     .clearBtn,
     .hideBtn {
-        font-size: 16px;
-        width: 30px;
-        height: 30px;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
         margin: 0px;
+        text-align: center;
         /* cursor: pointer;
         display: flex;
         justify-content: center;
