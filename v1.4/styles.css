@@ -160,7 +160,7 @@ p {
 
 /* Display for Mobile */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
     body {
         display: flex;
         flex-direction: column;
@@ -183,7 +183,7 @@ p {
     }
 
     .p-and-timer-cntr {
-        width: 90%;
+        /* width: 90%; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -192,12 +192,12 @@ p {
 
     p {
         font-size: 14px;
-        width: 85%;
-        margin-bottom: 50px;
+        width: 100%;
+        /* margin-bottom: 10px; */
     }
 
     .timer {
-        width: 90%;
+        width: 100%;
     }
 
     .timer__btn {
@@ -215,14 +215,8 @@ p {
     }
 
     .journal {
-        /* justify-content: center;
-        align-items: space-between; */
         align-items: flex-end;
-        border: 1px solid pink;
-    }
-
-    .buttons {
-        /* border: 1px solid blue; */
+        /* border: 1px solid pink; */
     }
 
     .clearBtn,
@@ -241,7 +235,6 @@ p {
     }
 
     /* Hidden Elements */
-    .timer__btn--userSetMin,
     .hideBtn {
         display: none;
     }
