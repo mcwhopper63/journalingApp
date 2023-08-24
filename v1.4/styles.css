@@ -178,6 +178,10 @@ p {
         justify-content: center;
         align-items: center;
     }
+    .journal {
+        align-items: flex-end;
+        /* border: 1px solid pink; */
+    }
 
     h1 {
         font-size: 40px;
@@ -199,10 +203,10 @@ p {
     .timer__btn {
         text-align: center;
     }
-
-    .timer__part-cntr {
-        margin-left: 35px;
+    .timer__btn--userSetMin {
+        font-size: 18px;
     }
+
     .timer__part-cntr {
         margin-left: 70px;
     }
@@ -210,14 +214,9 @@ p {
         font-size: 30px;
     }
 
-    .journal {
-        align-items: flex-end;
-        /* border: 1px solid pink; */
-    }
-
     .clearBtn,
     .hideBtn {
-        font-size: 24px;
+        font-size: 18px;
         width: 40px;
         height: 40px;
         margin: 0px;
