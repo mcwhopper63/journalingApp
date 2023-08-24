@@ -80,26 +80,21 @@ p {
 .clearBtn,
 .hideBtn {
     background-color: rgba(217, 217, 217, 0.3);
-    /* border: 0.5px solid black; */
     border: none;
     font-family: 'Karla';
-    font-size: 32px;
-    /* margin-bottom: 20px; */
-    width: 50px;
-    height: 50px;
-    /* margin-left: 4px;
-    margin-right: 4px; */
-    /* padding: 10px 28px; */
-    /* width: 140px; */
-    /* display: inline-block; */
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .hideBtn {
-    display: none;
+    /* display: none; */
 }
 
 #textarea {
     width: 100%;
+    resize: none;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     /* border: 0.5px solid black; */
 }
@@ -119,58 +114,59 @@ p {
 
 /* ===============TIMER==================== */
 
-.timer--top {
-    justify-content: space-around;
-    margin: 1em;
-}
-
-.timer--bottom {
+.timer__buttons--cntr {
+    width: 80%;
+    margin: 16px;
     display: flex;
-    justify-content: center;
-    margin: 1em;
-}
-
-.timer__part {
-    font-size: 2rem;
-    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
 }
 
 .timer__btn {
     width: 50px;
     height: 50px;
-    margin-left: 16px;
-    /* border-radius: 50%; */
     border: none;
     color: white;
-    background: rgb(113, 174, 113);
     cursor: pointer;
+    background: black;
+}
+
+.timer__btn--userSetMin {
+    font-size: 32px;
+}
+
+.timer__display--cntr {
+    width: 80%;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.timer__part-cntr {
+    margin-left: 75px;
+}
+
+.timer__part {
+    font-size: 32px;
+    /* border: 1px solid green; */
 }
 
 .timer__btn--start {
-    /* background: rgb(0, 184, 76); */
     background: #396f47;
 }
-
 .timer__btn--stop {
-    /* background: #ff0256; */
     background: #c04848;
 }
 
-.timer__btn--5min {
-    /* background: rgb(0, 160, 0); */
-    background: black;
-}
-.timer__btn--10min {
-    /* background: rgb(0, 140, 0); */
-    background: black;
-}
-.timer__btn--20min {
-    /* background: rgb(0, 120, 0); */
-    background: black;
-}
+/* Display for Mobile */
 
-.timer__btn--reset {
-    /* background: rgb(0, 100, 0); */
-    background: black;
-    font-size: 32px;
+@media screen and (max-width: 320px) {
+    .welcome,
+    .journal,
+    .footer {
+        width: 100%;
+    }
 }
