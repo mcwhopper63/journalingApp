@@ -234,4 +234,9 @@ p {
     .hideBtn {
         display: none;
     }
+
+    /* edge case */
+    button {
+        padding-right: 5px;
+    }
 }
