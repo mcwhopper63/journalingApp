@@ -1,16 +1,23 @@
-*,
-*::before,
-*::after {
+:root {
+    --background: #f6f1eb;
+    --h1-text: black;
+    --p-text: rgba(0, 0, 0, 0.7);
+    --box-background: rgba(217, 217, 217, 0.3);
+}
+
+* {
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
-:root {
+html {
     font-size: 16px;
+    font-family: 'Karla', 'Cormorant Garamond';
 }
 
 body {
-    background: #f6f1eb;
-    font-family: 'Karla', 'Cormorant Garamond';
+    background: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +35,7 @@ body {
 
 h1 {
     text-align: center;
-    color: black;
+    color: var(--h1-text);
     font: 64px 'Cormorant Garamond';
     font-weight: bold;
 }
@@ -43,7 +50,7 @@ h1 {
 
 p {
     margin: 0px;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--p-text);
     font: 24px 'Karla' 'Tahoma';
     line-height: 20px;
     width: 370px;
@@ -60,8 +67,7 @@ p {
     align-items: center;
 
     /* border: 0.5px solid black; */
-    background-color: rgba(217, 217, 217, 0.3);
-
+    background-color: var(--box-background);
     /* border: 1px solid green; */
 }
 
@@ -77,16 +83,25 @@ p {
     /* border: 1px solid blue; */
 }
 
-.clearBtn,
-.hideBtn {
-    background-color: rgba(217, 217, 217, 0.3);
+.functionalBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.clearBtnDiv,
+.hideBtnDiv {
+    background-color: var(--box-background);
     border: none;
     font-family: 'Karla';
     font-size: 24px;
     width: 40px;
     height: 40px;
     cursor: pointer;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #textarea {
@@ -123,10 +138,13 @@ p {
 .timer__btn {
     width: 50px;
     height: 50px;
+    font-size: 14px;
     border: none;
     color: white;
     cursor: pointer;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
 }
 

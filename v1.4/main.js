@@ -10,6 +10,10 @@ class Timer {
             tenMin: root.querySelector('.timer__btn--10min'),
             twentyMin: root.querySelector('.timer__btn--20min'),
             userSetMin: root.querySelector('.timer__btn--userSetMin'),
+            // fiveMin: root.querySelector('.timer__btn--5min'),
+            // tenMin: root.querySelector('.timer__btn--10min'),
+            // twentyMin: root.querySelector('.timer__btn--20min'),
+            // userSetMin: root.querySelector('.timer__btn--userSetMin'),
         };
 
         this.interval = null;
@@ -26,6 +30,7 @@ class Timer {
         });
 
         this.el.userSetMin.addEventListener('click', () => {
+            this.stop();
             const inputMinutes = prompt(
                 'One of those days? 😔 How many minutes do you need?'
             );
@@ -34,20 +39,27 @@ class Timer {
                 this.stop();
                 this.remainingSeconds = inputMinutes * 60;
                 this.updateInterfaceTime();
+            } else if (inputMinutes >= 60) {
+                this.stop();
+                this.remainingSeconds = 3600;
+                this.updateInterfaceTime();
             }
         });
 
         this.el.fiveMin.addEventListener('click', () => {
+            this.stop();
             this.remainingSeconds = 5 * 60;
             this.updateInterfaceTime();
         });
 
         this.el.tenMin.addEventListener('click', () => {
+            this.stop();
             this.remainingSeconds = 10 * 60;
             this.updateInterfaceTime();
         });
 
         this.el.twentyMin.addEventListener('click', () => {
+            this.stop();
             this.remainingSeconds = 20 * 60;
             this.updateInterfaceTime();
         });
@@ -99,10 +111,11 @@ class Timer {
     static getHTML() {
         return `
       <div class="timer__buttons--cntr">
-        <button type="button" class="timer__btn timer__btn--5min">5min</button>
-        <button type="button" class="timer__btn timer__btn--10min">10min</button>
-        <button type="button" class="timer__btn timer__btn--20min">20min</button>
-        <button type="button" class="timer__btn timer__btn--userSetMin">😔</button>
+      <div class='timer__btn timer__btn--5min'>5min</div>
+      <div class='timer__btn timer__btn--10min'>10min</div>
+      <div class='timer__btn timer__btn--20min'>20min</div>
+      <div class='timer__btn timer__btn--userSetMin'>😔</div>
+      
       </div>
 
       <div class="timer__display--cntr">
@@ -112,7 +125,8 @@ class Timer {
             <span class="timer__part timer__part--seconds">00</span>
         </div>
 
-        <button type="button" class="timer__btn timer__btn--control timer__btn--start"><span class="material-icons">play_arrow</span>
+        <div class='timer__btn timer__btn--control timer__btn--start'><span class="material-icons">play_arrow</span></div>
+        
         </button>
       </div>
 		`;
