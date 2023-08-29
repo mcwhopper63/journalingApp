@@ -10,10 +10,6 @@ class Timer {
             tenMin: root.querySelector('.timer__btn--10min'),
             twentyMin: root.querySelector('.timer__btn--20min'),
             userSetMin: root.querySelector('.timer__btn--userSetMin'),
-            // fiveMin: root.querySelector('.timer__btn--5min'),
-            // tenMin: root.querySelector('.timer__btn--10min'),
-            // twentyMin: root.querySelector('.timer__btn--20min'),
-            // userSetMin: root.querySelector('.timer__btn--userSetMin'),
         };
 
         this.interval = null;
@@ -35,9 +31,13 @@ class Timer {
                 'One of those days? 😔 How many minutes do you need?'
             );
 
-            if (inputMinutes <= 60) {
+            if (inputMinutes < 0) {
                 this.stop();
-                this.remainingSeconds = inputMinutes * 60;
+                this.remainingSeconds = Math.floor(inputMinutes * 60 * -1);
+                this.updateInterfaceTime();
+            } else if (inputMinutes <= 60) {
+                this.stop();
+                this.remainingSeconds = Math.floor(inputMinutes * 60);
                 this.updateInterfaceTime();
             } else if (inputMinutes >= 60) {
                 this.stop();
