@@ -71,6 +71,10 @@ p {
     /* border: 1px solid green; */
 }
 
+.timer-hidden {
+    display: none;
+}
+
 /* =============JOURNAL======================= */
 .journal {
     width: 785px;

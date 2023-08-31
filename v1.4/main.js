@@ -15,8 +15,6 @@ class Timer {
         this.interval = null;
         this.remainingSeconds = 0;
 
-        // console.log(this.el)
-
         this.el.control.addEventListener('click', () => {
             if (this.interval === null) {
                 this.start();
@@ -93,6 +91,8 @@ class Timer {
             this.updateInterfaceTime();
 
             if (this.remainingSeconds === 0) {
+                console.log('zero!');
+                document.getElementById('textarea').value = '';
                 this.stop();
             }
         }, 1000);
@@ -102,9 +102,7 @@ class Timer {
 
     stop() {
         clearInterval(this.interval);
-
         this.interval = null;
-
         this.updateInterfaceControls();
     }
 
@@ -137,8 +135,28 @@ new Timer(document.querySelector('.timer'));
 
 // clear journal entry
 function eraseText() {
-    console.log('hello');
     document.getElementById('textarea').value = '';
 }
 
-function hideTimer() {}
+//
+let timerToggle = true;
+function hideTimer() {
+    console.log('Hello');
+
+    if (timerToggle) {
+        document.getElementById('timer-output').classList.remove('timer');
+        document.getElementById('timer-output').classList.add('timer-hidden');
+        !timerToggle;
+    } else {
+        document.getElementById('timer-output').classList.add('timer');
+        document
+            .getElementById('timer-output')
+            .classList.remove('timer-hidden');
+        !timerToggle;
+    }
+}
+
+//     this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
+//     this.el.control.classList.add('timer__btn--stop');
+//     this.el.control.classList.remove('timer__btn--start');
+// }
