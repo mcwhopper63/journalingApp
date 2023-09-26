@@ -8,4 +8,8 @@
 4. Don't worry, it'll self destruct once you close this window.
 5. so rest assured, let everything out.
 
-// \*\*\*\*
+// The all-important 'how-to': Installation and usage
+
+## Installation
+
+This version of the app was created using just HTML, CSS, and JS. Therefore, there is no installation process. Visit the site and you can use it right away.
