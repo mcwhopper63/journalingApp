@@ -1,13 +1,8 @@
-// Starting with a bang: The project title and description
-
 # Journal Safe
 
-1. Do you have something on your chest you want to get off?
-2. Write it off! Get it off your chest and onto the screen! It's very therapeutic!
-3. Don't worry, the entry will be deleted once you close the app, or once the timer is up. What's
-4. so rest assured, let everything out.
-
-// The all-important 'how-to': Installation and usage
+1. Are you stressed? Do you have something on your mind?
+2. Write it off! It's very therapeutic!
+3. Don't worry, the journal entry will be deleted once you close the app, or once the timer is up. Nothing is saved.
 
 ## Installation
 
@@ -17,4 +12,6 @@ This version of the app was created using just HTML, CSS, and JS. Therefore, the
 
 ![](https://github.com/wheels63/journalingApp/blob/main/Journal%20Safe%20Demo.gif)
 
-## Contributors and Comments
+## Inspiration
+
+I have been suffering from chronic pain in the left arm and left hand. I could not type at all in 2021 and 2022. I read Dr. Sarno's books on healing chronic pain through journaling and created this app.
