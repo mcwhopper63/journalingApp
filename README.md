@@ -3,13 +3,18 @@
 # Journal Safe
 
 1. Do you have something on your chest you want to get off?
-2. No one to talk to? Deepest darkest secret?
-3. Write it here. It's okay. Go ahead.
-4. Don't worry, it'll self destruct once you close this window.
-5. so rest assured, let everything out.
+2. Write it off! Get it off your chest and onto the screen! It's very therapeutic!
+3. Don't worry, the entry will be deleted once you close the app, or once the timer is up. What's
+4. so rest assured, let everything out.
 
 // The all-important 'how-to': Installation and usage
 
 ## Installation
 
-This version of the app was created using just HTML, CSS, and JS. Therefore, there is no installation process. Visit the site and you can use it right away.
+This version of the app was created using just HTML, CSS, and JS. Therefore, there is no installation required to use the app. Visit the site and you can use it right away. https://journal-safe.netlify.app/
+
+## App Demo
+
+![](https://github.com/wheels63/journalingApp/blob/main/Journal%20Safe%20Demo.gif)
+
+## Contributors and Comments
