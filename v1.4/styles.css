@@ -6,8 +6,6 @@
 }
 
 * {
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
 }
 
@@ -25,8 +23,6 @@ body {
 }
 
 .welcome {
-    /* width: 50%; */
-    /* display: flex; */
     width: 785px;
     margin-bottom: 50px;
 
@@ -43,7 +39,6 @@ h1 {
 .p-and-timer-cntr {
     display: flex;
     justify-content: space-between;
-    /* margin-top: -5px; */
 
     /* border: 1px solid blue; */
 }
@@ -65,10 +60,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* border: 0.5px solid black; */
     background-color: var(--box-background);
-    /* border: 1px solid green; */
 }
 
 .timer-hidden {
@@ -121,7 +113,6 @@ p {
 
 .border-and-shadow {
     border-radius: 2px;
-    /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2); */
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -140,7 +131,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 .timer__btn {
@@ -266,6 +256,3 @@ p {
         padding-right: 8px;
     }
 }
-
-/* lets try this out */
-/* gonnna have to apply atomic naming */

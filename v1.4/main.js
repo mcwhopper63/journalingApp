@@ -1,7 +1,10 @@
+// Timer Object
+
 class Timer {
     constructor(root) {
         root.innerHTML = Timer.getHTML();
 
+        // Selectors
         this.el = {
             minutes: root.querySelector('.timer__part--minutes'),
             seconds: root.querySelector('.timer__part--seconds'),
@@ -13,8 +16,10 @@ class Timer {
         };
 
         this.interval = null;
+
         this.remainingSeconds = 0;
 
+        // Selectors
         this.el.control.addEventListener('click', () => {
             if (this.interval === null) {
                 this.start();
@@ -23,6 +28,7 @@ class Timer {
             }
         });
 
+        // Custom Timer set by User
         this.el.userSetMin.addEventListener('click', () => {
             this.stop();
             const inputMinutes = prompt(
@@ -44,6 +50,7 @@ class Timer {
             }
         });
 
+        // Preset Timers: 5min, 10min, 20min
         this.el.fiveMin.addEventListener('click', () => {
             this.stop();
             this.remainingSeconds = 5 * 60;
@@ -106,6 +113,8 @@ class Timer {
         this.updateInterfaceControls();
     }
 
+    // Rendering
+
     static getHTML() {
         return `
       <div class="timer__buttons--cntr">
@@ -133,16 +142,14 @@ class Timer {
 
 new Timer(document.querySelector('.timer'));
 
-// clear journal entry
+// Clear Journal Button
 function eraseText() {
     document.getElementById('textarea').value = '';
 }
 
-//
+// Hide Timer Button (need to work on this one)
 let timerToggle = true;
 function hideTimer() {
-    console.log('Hello');
-
     if (timerToggle) {
         document.getElementById('timer-output').classList.remove('timer');
         document.getElementById('timer-output').classList.add('timer-hidden');
@@ -155,8 +162,3 @@ function hideTimer() {
         !timerToggle;
     }
 }
-
-//     this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
-//     this.el.control.classList.add('timer__btn--stop');
-//     this.el.control.classList.remove('timer__btn--start');
-// }
