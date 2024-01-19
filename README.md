@@ -14,4 +14,4 @@ This version of the app was created using just HTML, CSS, and JS. Therefore, the
 
 ## Inspiration
 
-I have been suffering from chronic pain in the left arm and left hand. I could not type at all in 2021 and 2022. I read Dr. Sarno's books on healing chronic pain through journaling and created this app.
+I have been suffering from chronic pain in the left arm and left hand. I could not type at all in 2021 and 2022. I read Dr. Sarno's books on healing chronic pain through journaling and created this app. I use this app daily as journaling has become a daily routine in my life.
