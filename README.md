@@ -88,8 +88,8 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
 
 # Journal Safe
 
-A simple journaling app for stress-relief and managing chronic pain.
-https://journal-safe.netlify.app/
+A simple journaling app for stress-relief and managing chronic pain.  
+https://journal-safe.netlify.app/  
 JavaScript, CSS, HTML, Netlify
 
 1.  **Introduction**
