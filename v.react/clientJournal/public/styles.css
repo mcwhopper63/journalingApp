@@ -1,0 +1,267 @@
+:root {
+    --background: #f6f1eb;
+    --h1-text: black;
+    --p-text: rgba(0, 0, 0, 0.7);
+    --box-background: rgba(217, 217, 217, 0.3);
+}
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Karla', 'Cormorant Garamond';
+}
+
+body {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    /* width: 50%; */
+    /* display: flex; */
+    width: 785px;
+    margin-bottom: 50px;
+
+    /* border: 1px solid pink; */
+}
+
+h1 {
+    text-align: center;
+    color: var(--h1-text);
+    font: 64px 'Cormorant Garamond';
+    font-weight: bold;
+}
+
+.p-and-timer-cntr {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: -5px; */
+
+    /* border: 1px solid blue; */
+}
+
+p {
+    margin: 0px;
+    color: var(--p-text);
+    font: 24px 'Karla' 'Tahoma';
+    line-height: 20px;
+    width: 370px;
+    height: 160px;
+}
+
+.timer {
+    width: 370px;
+    height: 160px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 0.5px solid black; */
+    background-color: var(--box-background);
+    /* border: 1px solid green; */
+}
+
+.timer-hidden {
+    display: none;
+}
+
+/* =============JOURNAL======================= */
+.journal {
+    width: 785px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-end;
+    /* margin-bottom: 2em; */
+
+    /* border: 1px solid blue; */
+}
+
+.functionalBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.clearBtnDiv,
+.hideBtnDiv {
+    background-color: var(--box-background);
+    border: none;
+    font-family: 'Karla';
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textarea {
+    width: 100%;
+    resize: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    /* border: 0.5px solid black; */
+}
+
+.border-and-shadow {
+    border-radius: 2px;
+    /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2); */
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============FOOTER==================== */
+
+.footer {
+    width: 785px;
+    margin-bottom: 70px;
+}
+
+/* ===============TIMER==================== */
+
+.timer__buttons--cntr {
+    width: 80%;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.timer__btn {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.timer__btn--userSetMin {
+    font-size: 32px;
+}
+
+.timer__display--cntr {
+    width: 80%;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.timer__part-cntr {
+    margin-left: 75px;
+}
+
+.timer__part {
+    font-size: 32px;
+    /* border: 1px solid green; */
+}
+
+.timer__btn--start {
+    background: #396f47;
+}
+.timer__btn--stop {
+    background: #c04848;
+}
+
+/* Display for Mobile */
+
+@media screen and (max-width: 430px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome,
+    .journal,
+    .footer {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .journal {
+        align-items: flex-end;
+        /* border: 1px solid pink; */
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .p-and-timer-cntr {
+        /* width: 90%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: -25px;
+    }
+
+    .timer__btn {
+        text-align: center;
+    }
+    .timer__btn--userSetMin {
+        font-size: 18px;
+    }
+
+    .timer__part-cntr {
+        margin-left: 70px;
+    }
+    .timer__part {
+        font-size: 30px;
+    }
+
+    .clearBtn,
+    .hideBtn {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        text-align: center;
+        /* cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    #textarea {
+        width: 100%;
+    }
+
+    /* Hidden Elements */
+    .hideBtn {
+        display: none;
+    }
+
+    /* edge case */
+    button {
+        padding-right: 8px;
+    }
+}
+
+/* lets try this out */
+/* gonnna have to apply atomic naming */
