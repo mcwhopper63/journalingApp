@@ -27,10 +27,14 @@ body {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
+.section-padding {
+    padding: 0 1.5rem;
+}
+
 /* hero section */
 .welcome {
-    width: 50rem;
-    margin-bottom: 5rem;
+    width: 47rem;
+    margin-bottom: 3rem;
     /* padding: 2rem; */
 }
 
@@ -53,7 +57,8 @@ h1 {
 
 p {
     color: var(--p-text);
-    font: 1.5rem 'Karla' 'Tahoma';
+    font: 'Karla' 'Tahoma';
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5rem;
 }
@@ -69,7 +74,7 @@ p {
 
 /* =============JOURNAL======================= */
 .journal {
-    width: 50rem;
+    width: 47rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -110,8 +115,8 @@ p {
 /* ===============FOOTER==================== */
 
 .footer {
-    width: 50rem;
-    padding: 2rem;
+    width: 47rem;
+    /* padding: 2rem; */
     padding-top: 0;
     margin-bottom: 6.25rem;
 }
@@ -175,9 +180,9 @@ p {
     width: 3rem;
 }
 
-/* Display for Mobile */
+/* Display for Tablet */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 769px) {
     body {
         display: flex;
         flex-direction: column;
@@ -185,85 +190,78 @@ p {
         align-items: center;
     }
 
+    .welcome {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .p-and-timer-cntr {
+        display: inline;
+    }
+
+    .instructions-blurb {
+        font-size: 1.2rem;
+        min-width: 330px;
+        max-width: 440px;
+        margin-bottom: 2rem;
+    }
+
+    .timer-cntr {
+        min-width: 330px;
+        max-width: 440px;
+    }
+
+    .journal {
+        width: 90vw;
+    }
+
+    .footer {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        align-items: flex-start;
+    }
+}
+/* 
+@media screen and (max-width: 400px) {
+    body {
+        width: 400px;
+    }
     .welcome,
     .journal,
     .footer {
-        width: 95%;
+        width: 90vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .journal {
-        align-items: flex-end;
-        /* border: 1px solid pink; */
-    }
-
-    h1 {
-        font-size: 40px;
     }
 
     .p-and-timer-cntr {
-        /* width: 90%; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        display: inline;
     }
 
-    p {
-        font-size: 14px;
-        margin-bottom: -25px;
+    .timer-cntr {
+        width: 20vw;
     }
 
-    .timer {
-        margin-top: 6rem;
-        width: 370px;
-        height: 160px;
+    .instructions-blurb {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
 
-    .timer__btn {
-        text-align: center;
-    }
-    .timer__btn--userSetMin {
-        font-size: 18px;
-    }
-
-    .timer__part-cntr {
-        margin-left: 70px;
-    }
-    .timer__part {
-        font-size: 30px;
-    }
-
-    .clearBtn,
-    .hideBtn {
-        font-size: 18px;
-        width: 40px;
-        height: 40px;
-        margin: 0px;
-        text-align: center;
-        /* cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center; */
-    }
-    #textarea {
-        width: 100%;
-        /* margin-bottom: 5rem; */
-    }
-
-    /* Hidden Elements */
-    .hideBtn {
-        display: none;
-    }
-
-    /* edge case */
-    button {
-        padding-right: 8px;
+    .journal {
+        align-items: flex-end;
     }
 
     .footer {
-        height: 15rem;
+        align-items: flex-start;
     }
-}
+} */
