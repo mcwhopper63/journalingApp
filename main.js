@@ -140,7 +140,7 @@ class Timer {
     }
 }
 
-new Timer(document.querySelector('.timer'));
+new Timer(document.querySelector('.timer-cntr'));
 
 // Clear Journal Button
 function eraseText() {
