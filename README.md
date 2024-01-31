@@ -114,7 +114,7 @@ JavaScript, CSS, HTML, Netlify
         - If you need to stop early, just close the window; your entry won't be saved.
         - The app automatically destroys the journal entry when the timer ends, ensuring privacy.
 
-    <img src="./v1.4/assets/Journal Safe image for github documentation-min.png" alt="journal safe screenshot" />
+    <img src="./assets/Product demo for github.png" alt="journal safe screenshot" />
 
 5.  **Contributing / Contact / Support**:
 
