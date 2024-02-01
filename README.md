@@ -20,11 +20,11 @@ JavaScript, CSS, HTML, Netlify
 
 4.  **How to use:**
 
-        - Visit the Journal Safe website. (journal-safe.netlify.app/)
-        - Select a preset time for journaling or enter a desired duration.
-        - Begin journaling in the provided space.
-        - If you need to stop early, just close the window; your entry won't be saved.
-        - The app automatically destroys the journal entry when the timer ends, ensuring privacy.
+    1.  Visit the Journal Safe website (journal-safe.netlify.app/)
+    2.  Select a preset time for journaling or enter a desired duration.
+    3.  Begin journaling in the provided space.
+    4.  If you need to stop early, just close the window; your entry won't be saved.
+    5.  The app automatically destroys the journal entry when the timer ends, ensuring privacy.
 
     <img src="./assets/journal safe product demo.gif" alt="journal safe screenshot" />
 
