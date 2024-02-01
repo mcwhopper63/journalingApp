@@ -39,6 +39,6 @@ JavaScript, CSS, HTML, Netlify
 
 7.  **Developer Comments**:
 
-    I would like to express my gratitude to Dr. Sarno, who came up with this technique, Nicole J. Sachs (LCSW), my family, friends, the 100devs community, and chatGPT4.
+    I would like to express my gratitude to Dr. Sarno, who came up with this technique, Nicole J. Sachs, LCSW, my family, friends, the 100devs community, and chatGPT4.
 
     Journal Safe was inspired by my personal journey of overcoming the inability to use my left hand and arm in 2020. Committing to journaling has not only helped me physically but also enabled me to learn coding and run a business. I hope Journal Safe brings similar relief and success to your journey.
